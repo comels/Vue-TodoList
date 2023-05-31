@@ -75,7 +75,7 @@ const deleteTodo = (todoId) => {
       />
     </ul>
     <p v-else class="todo-msg">
-      <Icon icon="noto-v1:sad-but-relieved-face" width="22px" />
+      <Icon icon="icon-park-solid:good-one" color="#21177d" width="22" />
       <span>Tu n'as rien à faire !</span>
     </p>
     <p v-if="todoComputed && todoList.length > 0" class="todo-msg">
@@ -113,6 +113,8 @@ main {
   }
   .todo-msg {
     display: flex;
+    font-size: 20px;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
     gap: 8px;

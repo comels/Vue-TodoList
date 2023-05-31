@@ -29,7 +29,11 @@ const createTodo = () => {
 
 <template>
   <div class="input-wrap" :class="{ 'input-err': todoState.invalid }">
-    <input type="text" v-model="todoState.todo" />
+    <input
+      type="text"
+      placeholder="Ajouter une tâche..."
+      v-model="todoState.todo"
+    />
     <button @click="createTodo">Ajouter</button>
   </div>
 
@@ -42,19 +46,17 @@ const createTodo = () => {
 .input-wrap {
   transition: 250ms ease;
   display: flex;
-  border: 2px solid rgb(24, 145, 28);
+  border: 2px solid #f1f1f1;
 
   &.input-err {
     border-color: red;
   }
 
-  &:focus-within {
-    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1),
-      0 -2px 4px -2px rgb(0 0 0 / 0.1);
-  }
-
   input {
+    font-family: "Amatic SC", cursive;
+    font-size: 20px;
     width: 100%;
+    height: 30px;
     padding: 8px 6px;
     border: none;
     cursor: pointer;
@@ -63,6 +65,9 @@ const createTodo = () => {
     }
   }
   button {
+    font-family: "Amatic SC", cursive;
+    font-weight: bold;
+    font-size: 20px;
     border: none;
     padding: 8px 16px;
     cursor: pointer;

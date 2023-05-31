@@ -9,10 +9,11 @@ import TodoHeader from "./components/TodoHeader.vue";
 </template>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap");
 * {
-  font-family: Rubik, sans-serif;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
