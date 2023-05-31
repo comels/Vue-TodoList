@@ -7,13 +7,8 @@ import { RouterLink } from "vue-router";
     <header>
       <nav class="container">
         <div class="branding">
-          <img src="../assets/logo-todos.png" alt="" />
-          <h1>Vue Todos</h1>
+          <RouterLink to="/"><h1>リスト Risuto</h1></RouterLink>
         </div>
-        <ul class="nav-routes">
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-        </ul>
       </nav>
     </header>
   </div>
@@ -24,6 +19,7 @@ header {
   background-color: #f1f1f1;
   nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 25px 16px;
 
@@ -31,19 +27,26 @@ header {
       display: flex;
       align-items: center;
       gap: 8px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
       img {
         max-width: 150px;
       }
       h1 {
-        font-size: 30px;
+        margin: 0;
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
       }
     }
     .nav-routes {
       display: flex;
-      flex: 1;
-      justify-content: flex-end;
       list-style: none;
+      justify-content: center;
       gap: 12px;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 25px;
 
       a {
         text-decoration: none;

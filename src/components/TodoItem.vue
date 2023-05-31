@@ -71,11 +71,6 @@ li {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
 
-  &:hover {
-    .todo-actions {
-      opacity: 1;
-    }
-  }
   input[type="checkbox"] {
     appearance: none;
     width: 20px;
@@ -105,7 +100,6 @@ li {
   .todo-actions {
     display: flex;
     gap: 6px;
-    opacity: 0;
     transition: 150ms ease-in-out;
     .icon {
       cursor: pointer;

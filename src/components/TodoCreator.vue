@@ -23,14 +23,14 @@ const createTodo = () => {
     return;
   }
   todoState.invalid = true;
-  todoState.errMsg = "Todo value cannot be empty";
+  todoState.errMsg = "Texte manquant !";
 };
 </script>
 
 <template>
   <div class="input-wrap" :class="{ 'input-err': todoState.invalid }">
     <input type="text" v-model="todoState.todo" />
-    <button @click="createTodo">Create</button>
+    <button @click="createTodo">Ajouter</button>
   </div>
 
   <!-- <p v-if="todoState.invalid" class="err-msg">{{ todoState.errMsg }}</p> -->

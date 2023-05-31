@@ -62,7 +62,6 @@ const deleteTodo = (todoId) => {
 
 <template>
   <main>
-    <h1>Create Todo</h1>
     <TodoCreator @create-todo="createTodo" />
     <ul v-if="todoList.length > 0" class="todo-list">
       <TodoItem
@@ -77,11 +76,11 @@ const deleteTodo = (todoId) => {
     </ul>
     <p v-else class="todo-msg">
       <Icon icon="noto-v1:sad-but-relieved-face" width="22px" />
-      <span>You have nothing to do !</span>
+      <span>Tu n'as rien à faire !</span>
     </p>
     <p v-if="todoComputed && todoList.length > 0" class="todo-msg">
       <Icon icon="noto-v1:party-popper" />
-      <span>All is finish !</span>
+      <span>Bravo !</span>
     </p>
   </main>
 </template>
